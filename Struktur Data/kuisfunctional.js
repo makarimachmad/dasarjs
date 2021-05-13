@@ -22,12 +22,12 @@
   ];
   
   // TODO
-  var greatAuthors=[];
+
   const bukufilter = books.filter((books)=>books.sales>1000000);
   console.log(bukufilter);
   
-  const bukumap = books.filter((books)=>books.sales>1000000).map((books)=>{return`${books.author} adalah penulis buku ${books.title} yang sangat hebat!`});
-  console.log(bukumap);
+  const greatAuthors = books.filter((books)=>books.sales>1000000).map((books)=>{return`${books.author} adalah penulis buku ${books.title} yang sangat hebat!`});
+  console.log(greatAuthors);
   /**
    * Hiraukan kode di bawah ini
    */
